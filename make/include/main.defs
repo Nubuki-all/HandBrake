@@ -48,6 +48,24 @@ ifeq (1,$(FEATURE.x265))
     MODULES += contrib/x265_10bit
     MODULES += contrib/x265_12bit
 endif
+MODULES += contrib/bzip2
+MODULES += contrib/xz
+MODULES += contrib/zlib
+MODULES += contrib/freetype
+MODULES += contrib/fribidi
+MODULES += contrib/harfbuzz
+MODULES += contrib/libxml2
+MODULES += contrib/libass
+MODULES += contrib/libogg
+MODULES += contrib/libvorbis
+MODULES += contrib/libopus
+MODULES += contrib/libspeex
+MODULES += contrib/libtheora
+MODULES += contrib/lame
+MODULES += contrib/x264
+MODULES += contrib/jansson
+MODULES += contrib/libvpx
+MODULES += contrib/libjpeg-turbo
 
 MODULES += contrib/libdav1d
 MODULES += contrib/svt-av1
