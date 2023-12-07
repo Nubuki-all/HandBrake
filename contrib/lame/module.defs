@@ -7,7 +7,9 @@ LAME.FETCH.sha256  = ddfe36cab873794038ae2c1210557ad34857a4b6bdc515785d1da9e175b
 
 LAME.CONFIGURE.extra += --disable-frontend
 ifneq (none,$(FFMPEG.GCC.g))
+ifneq (,$(filter $(HOST.machine),x86_64 amd64))
 	LAME.CONFIGURE.extra += --enable-debug
+endif
 endif
 
 ifeq (1-msys,$(HOST.cross)-$(BUILD.system))
